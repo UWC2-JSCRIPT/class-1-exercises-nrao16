@@ -9,10 +9,10 @@
 const SMALL_PIZZA_DIAMETER = 13;
 const LARGE_PIZZA_DIAMETER = 17;
 const smallPizzaArea = Math.PI * ((SMALL_PIZZA_DIAMETER/2) ** 2);
-console.log("smallPizzaArea:" + smallPizzaArea);
+console.log(`smallPizzaArea: ${smallPizzaArea}`);
 
 const largePizzaArea = Math.PI * ((LARGE_PIZZA_DIAMETER/2) ** 2);
-console. log("largePizzaArea:" + largePizzaArea);
+console. log(`largePizzaArea: ${largePizzaArea}`);
 
 // 2. What is the cost per square inch of each pizza?
 
@@ -21,10 +21,20 @@ console. log("largePizzaArea:" + largePizzaArea);
 // that allows you to draw a random card with a value
 // between 1 and 13 (assume ace is 1, jack is 11…)
 
+const TOP_CARD = 13;
+const card = Math.ceil(Math.random() * TOP_CARD);
+console.log(`You drew card:${card}`);
 
 // 4. Draw 3 cards and use Math to determine the highest
 // card
-
+const card1 = Math.ceil(Math.random() * TOP_CARD);
+console.log(`card1:${card1}`);
+const card2 = Math.ceil(Math.random() * TOP_CARD);
+console.log(`card2:${card2}`);
+const card3 = Math.ceil(Math.random() * TOP_CARD);
+console.log(`card3: ${card3}`);
+const maxCard = Math.max(card1, card2, card3);
+console.log(`Highest card:${maxCard}`);
 
 /**
  * ADDRESS LINE
